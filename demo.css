@@ -1,0 +1,90 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	width: 100%;
+	height: 100%;
+}
+
+body{
+	background: #eee;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	font-size: 30px;
+}
+
+.calendar{
+	width: 820px;
+	margin: auto;
+	text-align: center;
+}
+
+.head{
+	width: 100%;
+	padding: 20px 0;
+	font-size: 38px;
+}
+
+.lastYear,.lastMonth{
+	float: left;
+	margin-right: 30px;
+}
+
+.lastYear:hover,.lastMonth:hover,.nextYear:hover,.nextMonth:hover{
+	color: red;
+	cursor: pointer;
+}
+
+.nextYear,.nextMonth{
+	float: right;
+	margin-left: 30px;
+}
+
+table{
+	width: 100%;
+	border: 1px solid #666;
+	background: #fff;
+}
+
+table tr{
+	text-align: center;
+}
+
+thead tr{
+	font-weight: bold;
+	font-size: 32px;
+}
+
+.current{
+	background: #f90;
+    color: #fff;
+}
+
+table tr td{
+	border-bottom: 1px solid #666;
+	border-right: 1px solid #666;
+	padding: 15px 30px;
+}
+
+table tr td:last-child{
+	border-right: none;
+}
+
+tbody tr:last-child td{
+	border-bottom: none;
+}
+
+.otherMonth{
+	color: #aaa;
+}
+
+.yearSelect,.monthSelect{
+	padding: 6px 5px 8px 5px;
+	font-size: 20px;
+	text-align: center;
+}
